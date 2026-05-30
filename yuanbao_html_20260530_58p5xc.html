@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>AI 工具导航</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+:root {
+  --bg: #0f1117;
+  --card: #1a1d27;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #6366f1;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  background: #12141c;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* 广告位 */
+.ad-top {
+  background: #22263a;
+  color: var(--muted);
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* 主内容 */
+.main {
+  flex: 1;
+}
+
+.category {
+  margin-bottom: 30px;
+}
+
+.category h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  border-left: 4px solid var(--accent);
+  padding-left: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  background: #22263a;
+}
+
+.card a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card p {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* 侧边广告 */
+.sidebar {
+  width: 220px;
+}
+
+.ad-box {
+  background: #22263a;
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="ad-top">
+  🔥 这里是顶部横幅广告位（Google AdSense / 自定义）
+</div>
+
+<header>
+  <h1>🧠 AI 工具导航</h1>
+  <p style="color:#9ca3af;">精选 AI 网站 · 持续更新</p>
+</header>
+
+<div class="container">
+
+  <main class="main">
+
+    <section class="category">
+      <h2>大模型 / Chat</h2>
+      <div class="grid">
+        <div class="card">
+          <a href="https://chat.openai.com" target="_blank">ChatGPT</a>
+          <p>最强通用对话模型</p>
+        </div>
+        <div class="card">
+          <a href="https://claude.ai" target="_blank">Claude</a>
+          <p>长文本理解利器</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="category">
+      <h2>AI 绘画</h2>
+      <div class="grid">
+        <div class="card">
+          <a href="https://midjourney.com" target="_blank">Midjourney</a>
+          <p>高质量 AI 图像生成</p>
+        </div>
+        <div class="card">
+          <a href="https://leonardo.ai" target="_blank">Leonardo</a>
+          <p>游戏 & 插画神器</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="category">
+      <h2>写作 / 办公</h2>
+      <div class="grid">
+        <div class="card">
+          <a href="https://notion.so" target="_blank">Notion AI</a>
+          <p>文档 + AI 助手</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <aside class="sidebar">
+    <div class="ad-box">
+      📢 侧边广告位<br />
+      可放推荐工具 / 联盟计划
+    </div>
+    <div class="ad-box">
+      💡 推广位<br />
+      比如你的付费项目
+    </div>
+  </aside>
+
+</div>
+
+<footer>
+  © 2026 AI 工具导航 · 深色简洁版
+</footer>
+
+</body>
+</html>
